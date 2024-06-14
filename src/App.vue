@@ -9,12 +9,16 @@
   box-sizing: border-box;
   font-family: 'Fira Sans', sans-serif;
 }
+html, body {
+  height: 100%;
+}
 body {
-  background-color: #030E1B;
+  background-color: #030e1b;
   color: #FFF;
+  overflow: auto;
 }
 a {
-  color: #2AEB74;
+  color: #2aeb74;
   text-decoration: none;
 }
 
@@ -24,9 +28,9 @@ button {
   background: none;
   cursor: pointer;
 
-  background-color: #2AEB74;
+  background-color: #2aeb74;
   font-size: 1.125rem;
-  color: #030E1b;
+  color: #030e1b;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
 }

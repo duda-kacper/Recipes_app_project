@@ -32,7 +32,10 @@ export default {
 	},
 	methods: {
 		cleanText (text) {
-			return text.replace(/\n/g, '<br />')
+			if (typeof text === 'string') {
+				return text.replace(/\n/g, '<br />');
+			}
+			return text;
 		}
 	}
 }

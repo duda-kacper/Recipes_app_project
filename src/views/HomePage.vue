@@ -83,7 +83,7 @@ export default {
     }
     
     const addNewRecipe = () => {
-      newRecipe.value.slug = newRecipe.value.title.toLowerCase().replace(/\s/g, '-');
+      newRecipe.value.slug = newRecipe.value.title.replace(/\s/g, '-');
 
       if (!newRecipe.value.slug) {
         alert("Please enter a title");
@@ -170,6 +170,8 @@ h1 {
   border-radius: 1rem;
   width: 100%;
   max-width: 768px;
+  max-height: 90vh;
+  overflow-y: auto;
 }
 
 .popup-content h2 {
